@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Borders</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            margin-bottom: 300px;
+        }
+        div{
+            background-color: coral;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            width: 500px;
+        }
+        #rounded-all{
+            border: 10px solid darkred;
+            border-radius: 25px;
+        }
+        #rounded-two{
+            border: 10px solid darkred;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+        #movie{
+            border-top: 50px solid darkred;
+            border-right: 80px solid black;
+            border-bottom: 50px solid darkred;
+            border-left: 80px solid black;
+            padding: 0;
+            background-color: black;
+        }
+        #circle{
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(45deg,black,red);
+            border-radius: 50%;
+        }
+        #ring{
+            width: 150px;
+            height: 150px;
+            border-top:  25px solid darkred;
+            border-right:  25px solid darkblue;
+            border-left:  25px solid darkmagenta;
+            border-bottom:  25px solid darkgreen;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+
+<!-- BORDER TOP -->
+<div style="border-top: 10px solid darkred">
+    <h2>BORDER TOP</h2>
+</div>
+
+<!-- BORDER RIGHT -->
+<div style="border-right: 10px solid darkred">
+    <h2>BORDER RIGHT</h2>
+</div>
+
+<!-- BORDER BOTTOM -->
+<div style="border-bottom: 10px solid darkred">
+    <h2>BORDER BOTTOM</h2>
+</div>
+
+<!-- BORDER LEFT -->
+<div style="border-left: 10px solid darkred">
+    <h2>BORDER LEFT</h2>
+</div>
+
+<!-- BORDER ALL SIDES -->
+<div style="border: 10px solid darkred">
+    <h2>BORDER ALL</h2>
+</div>
+
+<!-- ROUNDER BORDER ALL SIDES -->
+<div id="rounded-all">
+    <h2>ROUNDED ALL</h2>
+</div>
+
+<!-- ROUNDED TWO SIDES -->
+<div id="rounded-two">
+    <h2>ROUNDED TWO</h2>
+</div>
+
+<!-- CUSTOM BORDER -->
+<div id="movie">
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/8wC4P5JAz-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<!-- Circle -->
+<article id="circle">
+
+</article>
+
+<!-- Ring -->
+<article id="ring">
+
+</article>
+
+
+</body>
+</html>
